@@ -145,6 +145,71 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/14/%E6%95%B0%E6%8D%AE%E9%9B%86%E8%92%B8%E9%A6%8Fvs%E4%B8%BB%E5%8A%A8%E5%AD%A6%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="dejavu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/11/14/%E6%95%B0%E6%8D%AE%E9%9B%86%E8%92%B8%E9%A6%8Fvs%E4%B8%BB%E5%8A%A8%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">数据集蒸馏vs主动学习</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-11-14 21:53:57 / 修改时间：21:54:32" itemprop="dateCreated datePublished" datetime="2024-11-14T21:53:57+08:00">2024-11-14</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>最近因为要找其他CV领域问题迁移到rPPG方向，看到了主动学习和数据集蒸馏这两种方式，都是对数据集中的数据进行筛选。</p>
+<p>主动学习从数据集中采用不同策略，选择对当前训练最有价值的数据进行标注，</p>
+<blockquote>
+<p>主动学习算法有个关键的假设：“ The key hypothesis is that if the learning algorithm is allowed to choose the data from which it learns—to be “curious,” if you will—it will perform better with less training”。如果机器可以自己选择学习的样本，它可以使用较少的训练取得更好的效果。</p>
+</blockquote>
+<p>主动学习的研究多数情况下集中在两个地方:<strong>选择策略和查询策略</strong>。选择策略指导模型从哪里选择未标注样本，查询策略指导模型如何确定未标注样本是否需要被标注。采用主动学习可以在大幅度降级给数据打标签的成本，挑选出对模型有价值的数据。对于rPPG领域，所有的数据在采集的时候就已经带有标签，在后面也无法对数据添加标签，所有我觉得并不能用在这个方向。另外知乎大佬也说了，主动学习的性能在分类任务上甚至比不过半监督学习，可能需要的是在其他领域上发挥价值。<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/439453212/answer/2147806195">主动学习近几年的研究有哪些进展，现在有哪些代表性成果</a></p>
+<p>另外一个做法就是相对于模型蒸馏的数据集蒸馏，一个是可以减少训练的数据规模，并且或许可以将视频压缩成其他的形态，实现对于隐私的保护，但是目前看到的办法还是只是在MNIST数据集以及分类任务上，还需要再查阅点文献才知道是否能在视频和信号任务上进行。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/13/2024-flag/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -342,7 +407,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
